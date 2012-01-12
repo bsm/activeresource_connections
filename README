@@ -1,0 +1,41 @@
+ActiveResource Connections
+==========================
+
+Allow you to extend ActiveResource connections with your own customisations.
+Please see lib/active_resource/connections/retryable.rb for reference.
+
+Installation
+============
+
+Install as Gem:
+
+  gem install activeresource_connections
+
+Or, add to your Gemfile:
+
+  # Gemfile
+  gem "activeresource_connections"
+
+
+Examples
+========
+
+  # Gemfile
+  gem 'retryable'
+
+  # app/models/user.rb
+  class User < ActiveResource::Base
+    self.connection_class = ActiveResource::Connections::Retryable
+  end
+
+  # app/models/manager.rb
+  class Manager < User
+  end
+
+  p Manager.connection # => #<ActiveResource::Connections::Retryable ...>
+
+
+Footnote
+========
+
+Copyright (c) 2012 Black Square Media Ltd, released under the MIT license
