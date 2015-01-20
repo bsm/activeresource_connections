@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
 
   s.files        = Dir['lib/**/*']
 
-  s.add_dependency "activeresource", ">= 3.1.0", "< 3.3.0"
+  s.add_dependency "activeresource", ">= 3.1.0"
 
   s.add_development_dependency "rake"
   s.add_development_dependency "bundler"
