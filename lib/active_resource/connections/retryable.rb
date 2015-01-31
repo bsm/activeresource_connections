@@ -28,7 +28,7 @@ class ActiveResource::Connections::Retryable < ActiveResource::Connection
   protected
 
   def request(*)
-    retryable(retriable_options) { super }
+    Retryable.retryable(retriable_options) { super }
   end
 
 end
