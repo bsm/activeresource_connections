@@ -2,8 +2,8 @@ PATH
   remote: .
   specs:
     activeresource_connections (0.2.0)
-      activeresource (>= 4.0.0)
-      retryable (>= 2.0.0)
+      activeresource (~> 4.0, >= 4.0.0)
+      retryable (~> 2.0, >= 2.0.0)
 
 GEM
   remote: https://rubygems.org/
@@ -32,7 +32,7 @@ GEM
     rails-observers (0.1.2)
       activemodel (~> 4.0)
     rake (10.4.2)
-    retryable (2.0.0)
+    retryable (2.0.1)
     rspec (3.1.0)
       rspec-core (~> 3.1.0)
       rspec-expectations (~> 3.1.0)
@@ -58,7 +58,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeresource_connections!
-  bundler
-  rake
-  rspec
-  webmock
+  bundler (~> 1.7)
+  rake (~> 10.4)
+  rspec (~> 3.1)
+  webmock (~> 1.2)
